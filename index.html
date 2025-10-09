@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,55 @@
     <script src="index.js"></script>
     <title>To Do List</title>
 </head>
+
 <body>
-    <h1>To Do List</h1>
+    <div style="display: flex; justify-content: center; gap: 1rem;">
+        <h1 class="centered">To Do List</h1>
+        <button id="addToDo">Add task</button>
+    </div>
+    <div class="taskMakerDiv">
+        <h2>Title</h2>
+        <input type="text">
+        <h3>Description</h3>
+        <input type="text">
+        <select name="state" id="taskState" style="">
+            <option value="ToDo">ToDo</option>
+            <option value="Doing">Doing</option>
+            <option value="Done">Done</option>
+        </select>
+    </div>
+
     <div class="container">
-        <div>To Do</div>
-        <div>Doing</div>
-        <div>Done</div>
+        <div class="sectionContainer">
+            <div class="centered">
+                <h2>To Do</h2>
+            </div>
+            <div class="taskContainer">
+
+
+
+            </div>
+        </div>
+        <div class="sectionContainer">
+            <div class="centered">
+                <h2>Doing</h2>
+                <button id="addDoing ">Add task</button>
+            </div>
+            <div class="taskContainer">
+                <input type="text">
+                <div class="taskDoing">
+                </div>
+            </div>
+        </div>
+        <div class="sectionContainer">
+            <div class="centered">
+                <h2>Done</h2>
+                <button id="addDone">Add task</button>
+            </div>
+            <div class="taskContainer">
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
