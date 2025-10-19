@@ -1,11 +1,25 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const addToDo = document.getElementById('addToDo');
-    const addDoing = document.getElementById('addDoing');
-    const addDone = document.getElementById('addDone');
-    
-    addToDo.addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-        console.log("hola")
+    const addTask = document.getElementById('addTask');
+    const taskMakerDiv = document.querySelector(".taskMakerDiv");
+
+    addTask.addEventListener('click', function () {
+        taskMakerDiv.classList.toggle('visible');
+        
     });
 
+
+
+/**`<div class="task ">
+                    <h1>nigga1</h1>
+                    <p>nigga2</p>
+                    <div>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                        <select name="changeState" id="changeState">
+                            <option value="">op1</option>
+                            <option value="">op2</option>
+                        </select>
+                    </div>
+                </div>` */
 });

@@ -10,20 +10,27 @@
 </head>
 
 <body>
-    <div style="display: flex; justify-content: center; gap: 1rem;">
-        <h1 class="centered">To Do List</h1>
-        <button id="addToDo">Add task</button>
-    </div>
-    <div class="taskMakerDiv">
-        <h2>Title</h2>
-        <input type="text">
-        <h3>Description</h3>
-        <input type="text">
-        <select name="state" id="taskState" style="">
-            <option value="ToDo">ToDo</option>
-            <option value="Doing">Doing</option>
-            <option value="Done">Done</option>
-        </select>
+    <div class="header">
+        <div class="centered">
+            <h1 class="centered">To Do List</h1>
+            <button id="addTask">Add task</button>
+        </div>
+        <div>
+            <div class="taskMakerDiv">
+                <h2>Title</h2>
+                <input type="text">
+                <h3>Description</h3>
+                <input type="text">
+                <div>
+                    <select name="state" id="taskState">
+                        <option value="ToDo">ToDo</option>
+                        <option value="Doing">Doing</option>
+                        <option value="Done">Done</option>
+                    </select>
+                    <button class="button add">Add</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -32,9 +39,6 @@
                 <h2>To Do</h2>
             </div>
             <div class="taskContainer">
-
-
-
             </div>
         </div>
         <div class="sectionContainer">
@@ -42,8 +46,7 @@
                 <h2>Doing</h2>
             </div>
             <div class="taskContainer">
-                <div class="taskDoing">
-                </div>
+
             </div>
         </div>
         <div class="sectionContainer">
