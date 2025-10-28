@@ -50,10 +50,9 @@ button:hover {
 
 
 
-/* Por esto: */
 .taskMakerDiv {
-    display: none; /* Oculto por defecto */
-    flex-direction: column; /* Lo ponemos aquí para que se aplique cuando sea visible */
+    display: none; 
+    flex-direction: column;
     gap: 1rem;
     border: 1px solid black;
     padding: 1rem;
@@ -67,8 +66,9 @@ button:hover {
 .taskMakerDiv.visible {
     display: flex;
     justify-content: center;
-    align-items: center;/* Lo hacemos visible cambiando su display a flex */
+    align-items: center;
 }
+
 .header {
     display: flex;
     justify-content: center;
